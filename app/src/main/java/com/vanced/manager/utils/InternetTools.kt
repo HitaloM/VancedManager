@@ -89,13 +89,13 @@ suspend fun loadJson(context: Context) = withContext(Dispatchers.IO) {
         }
         if (connection.responseCode != 200) {
             log(TAG, latestbaseUrl + ": " + connection.responseCode.toString())
-            baseInstallUrl = "https://mirror.codebucket.de/vanced/api/v1"
+            baseInstallUrl = "https://gitlab.com/HitaloSama/VancedMirror/-/raw/main/api/v1"
         }
     } catch (e: IOException) {
-        baseInstallUrl = "https://mirror.codebucket.de/vanced/api/v1"
+        baseInstallUrl = "https://gitlab.com/HitaloSama/VancedMirror/-/raw/main/api/v1"
     } catch (e: SocketTimeoutException) {
         log(TAG, "connection timed out")
-        baseInstallUrl = "https://mirror.codebucket.de/vanced/api/v1"
+        baseInstallUrl = "https://gitlab.com/HitaloSama/VancedMirror/-/raw/main/api/v1"
     }
 
     log(TAG, "Fetching using URL: $baseInstallUrl")
