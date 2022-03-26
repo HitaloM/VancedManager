@@ -26,7 +26,12 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build debug APK with Gradle
-        run: ./gradlew assembleDebug
+        uses: gradle/gradle-command-action@v1
+        with:
+          arguments: assembleDebug
+          distributions-cache-enabled: true
+          dependencies-cache-enabled: true
+          configuration-cache-enabled: true
 
       - name: Upload Debug
         uses: actions/upload-artifact@v2
