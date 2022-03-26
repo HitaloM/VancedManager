@@ -20,6 +20,7 @@ import com.vanced.manager.R
 import com.vanced.manager.adapter.ExpandableAppListAdapter
 import com.vanced.manager.adapter.LinkAdapter
 import com.vanced.manager.adapter.SponsorAdapter
+import com.vanced.manager.adapter.MiscAdapter
 import com.vanced.manager.core.ui.base.BindingFragment
 import com.vanced.manager.core.ui.ext.showDialog
 import com.vanced.manager.databinding.FragmentHomeBinding
@@ -91,6 +92,14 @@ class HomeFragment : BindingFragment<FragmentHomeBinding>() {
                 layoutManager = lm
                 setHasFixedSize(true)
                 adapter = LinkAdapter(requireActivity(), viewModel)
+            }
+
+            recyclerMisc.apply {
+                val lm = FlexboxLayoutManager(requireActivity())
+                lm.justifyContent = JustifyContent.SPACE_EVENLY
+                layoutManager = lm
+                setHasFixedSize(true)
+                adapter = MiscAdapter(requireActivity(), viewModel)
             }
         }
     }

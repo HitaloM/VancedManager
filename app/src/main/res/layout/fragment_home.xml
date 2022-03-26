@@ -62,6 +62,21 @@
                 tools:itemCount="6"
                 tools:listitem="@layout/view_social_link" />
 
+            <com.vanced.manager.ui.core.ThemedTextView
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/misc_media"
+                style="@style/CardTextHeader" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_misc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:nestedScrollingEnabled="false"
+                tools:itemCount="1"
+                tools:listitem="@layout/view_social_link" />
+
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
