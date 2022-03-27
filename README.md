@@ -1,9 +1,12 @@
-# Vanced Manager
+# Vanced Manager (mirrored)
+
 <div>
 
-[![Github All Releases](https://img.shields.io/github/downloads/YTVanced/VancedManager/total.svg?style=for-the-badge)](https://github.com/YTVanced/VancedManager/releases/latest) [![Github All Releases](https://img.shields.io/github/release/YTVanced/VancedManager.svg?style=for-the-badge)](https://github.com/YTVanced/VancedManager/releases/latest)
+[![Github All Releases](https://img.shields.io/github/downloads/HitaloSama/VancedManager/total.svg?style=for-the-badge)](https://github.com/HitaloSama/VancedManager/releases/latest) [![Github All Releases](https://img.shields.io/github/release/HitaloSama/VancedManager.svg?style=for-the-badge)](https://github.com/HitaloSama/VancedManager/releases/latest)
 
 </div>
+
+> This is a version of Vanced Manager using mirrors that I did myself, since the official APIs were disabled along with the discontinuation of the project.
 
 ## Introduction
 
@@ -28,11 +31,13 @@ After 3 months of development, we are finally ready to Introduce [Vanced Manager
 <!-- ##### Background download/installation feature is no longer supported due to problems with some ROMs, please do NOT report issues regarding background activity. -->
 
 ## Contributions
+
 Pull Requests should be made to the [Dev](https://github.com/YTVanced/VancedManager) Branch as that is the working branch, master is for Release code only.
 
 For anyone who wants to provide translations please submit them to this [link](https://crowdin.com/project/vanced-manager) as we also use it for YouTube Vanced. Any issues with translations should be posted there too.
 
 ## TODO
+
 - [ ] Clean up the ViewModel and DataModel code
 - [ ] Migrate to Jetpack Compose when it's officially released
 
@@ -40,23 +45,26 @@ For anyone who wants to provide translations please submit them to this [link](h
 
 <div>
 
-[![Build](https://github.com/YTVanced/VancedManager/actions/workflows/debug.yml/badge.svg?branch=dev)](https://github.com/YTVanced/VancedManager/actions/workflows/debug.yml)
+[![Build](https://github.com/HitaloSama/VancedManager/actions/workflows/debug.yml/badge.svg?branch=dev)](https://github.com/HitaloSama/VancedManager/actions/workflows/debug.yml)
 
 </div>
 
 ## Using Android Studio
+
 Clone the Repository, open it in Android Studio and build the application.
 
 ## Google Advanced Protection Program
+
 If you are using this feature on your Google account, you must either disable it or log out from your Google account before installing Youtube Vanced via Vanced Manager.
 The Google Advanced Protection Program does not allow the installation of apps from unknown sources. These security measures are tied to the protected account and not the device. After the installation, you will be able to log back in or enroll again into the program.
 
 ## Using Command Line
-#### On Windows:
+
+### On Windows:
 ```powershell
 .\gradlew.bat assembleDebug
 ```
-#### On Linux/macOS:
+### On Linux/macOS:
 ```bash
 chmod +x gradlew
 ./gradlew assembleDebug
